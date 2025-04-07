@@ -218,15 +218,6 @@ The mobile application provides a voice-first interface that allows farmers to:
 4. Connect directly with buyers for better prices
 5. Optimize resource usage based on AI recommendations
 
-### Developers
-Developers can extend AgriSync's capabilities by:
-
-1. Adding support for additional languages
-2. Creating new ML models for specific crops or regions
-3. Integrating additional data sources
-4. Building custom visualizations for agricultural insights
-5. Implementing new market connection features
-
 ## 🧠 Models
 
 AgriSync leverages several fine-tuned open-source models:
