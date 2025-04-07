@@ -14,18 +14,6 @@ AgriSync is an innovative voice-first AI farm assistant designed to empower farm
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red)](https://pytorch.org/)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Transformers-yellow)](https://huggingface.co/)
 
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Models](#models)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
-- [Citations](#citations)
 
 ## 🌾 Overview
 
