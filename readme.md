@@ -269,19 +269,6 @@ POST /api/v1/voice/process
 GET /api/v1/market/prices
 ```
 
-## 👥 Contributing
-
-We welcome contributions to AgriSync! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) file for details on how to get involved.
-
-### Development Setup
-Follow these steps to set up a development environment:
-
-1. Fork the repository
-2. Clone your fork
-3. Set up the development environment following the installation instructions
-4. Create a new branch for your feature
-5. Submit a pull request with your changes
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
