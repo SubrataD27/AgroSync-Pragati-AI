@@ -291,3 +291,206 @@ Follow these steps to set up a development environment:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+# AgriSync: Voice-First AI Farm Assistant for Inclusive Agricultural Intelligence
+
+# Team MAHAKUMBH
+## Introduction
+AgriSync is an innovative voice-first AI farm assistant designed to empower farmers with inclusive agricultural intelligence. It leverages cutting-edge technologies to provide personalized recommendations, real-time weather insights, and market intelligence, all in a user-friendly voice interface.
+
+## Meet Our Team
+# Subrata Dhibar
+# Chandrakanta Jena
+# Raja Babu Sahu
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.12-orange)](https://www.tensorflow.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red)](https://pytorch.org/)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Transformers-yellow)](https://huggingface.co/)
+
+## Table of Contents
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Models](#models)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Citations](#citations)
+
+## Overview
+
+AgriSync is an open-source, AI-powered platform designed to empower small and marginal farmers in India through accessible agricultural intelligence. By combining voice-first interaction, offline-capable AI, and blockchain-verified market connections, AgriSync transforms basic smartphones into powerful farming advisors regardless of literacy, connectivity, or economic constraints.
+
+### Problem Statement
+
+Small-scale farmers in India face critical challenges:
+- Limited access to agricultural expertise
+- Climate-induced crop planning difficulties
+- Inefficient market connections
+- Lack of soil-specific recommendations
+- Inability to implement precision farming with minimal resources
+
+AgriSync addresses these challenges through an inclusive technological approach that works within the constraints of rural environments.
+
+## Key Features
+
+- **Multilingual Voice Assistant**: Accessible in 10+ Indian languages with offline capabilities
+- **Predictive Analytics**: Hyperlocal recommendations based on satellite imagery, weather data, and soil conditions
+- **Disease Identification**: On-device crop disease detection from smartphone photos
+- **Market Intelligence**: Direct buyer connections with price transparency and trend analysis
+- **Resource Optimization**: Smart scheduling for irrigation, fertilization, and pest management
+- **Offline Operation**: Core functionality available without internet connectivity
+
+## Architecture
+
+AgriSync employs a multi-layered architecture designed for resilience and scalability:
+
+1. **Device Layer**: Progressive Web App with on-device AI models for offline operation
+2. **Edge Processing Layer**: Optional village-level infrastructure for expanded capabilities
+3. **Core Services Layer**: Cloud-based microservices for advanced analytics when connected
+4. **Intelligence Layer**: Open-source AI models specialized for agricultural applications
+5. **Integration Layer**: Connections to external data sources and systems
+
+## Project Structure (For DEMO just)
+AgriSync Project Structure
+Copyagrisync/
+├── app.py                     # Main Streamlit application entry point
+├── README.md                  # Project documentation
+├── requirements.txt           # Dependencies
+├── assets/                    # Static assets for the application
+│   ├── css/                   # Custom CSS styles
+│   ├── images/                # Images for the UI
+│   └── sample_data/           # Sample data for testing
+├── modules/                   # Core functionality modules
+│   ├── voice_assistant.py     # Voice recognition and synthesis
+│   ├── crop_recommendation.py # Crop recommendation engine
+│   ├── disease_detection.py   # Disease detection from images
+│   ├── weather_forecast.py    # Weather prediction module
+│   └── market_data.py         # Market price information
+├── models/                    # Pre-trained model handling
+│   ├── model_loader.py        # Utilities for loading models
+│   └── model_registry.py      # Registry of available models
+├── data/                      # Data handling components
+│   ├── crops_data.py          # Crop database and parameters
+│   ├── disease_data.py        # Disease information
+│   └── weather_data.py        # Weather datasets
+├── ui/                        # UI components
+│   ├── home_page.py           # Home page UI elements
+│   ├── crop_page.py           # Crop recommendation page
+│   ├── disease_page.py        # Disease detection page
+│   ├── weather_page.py        # Weather forecast page
+│   └── market_page.py         # Market information page
+└── utils/                     # Utility functions
+    ├── audio_utils.py         # Audio processing utilities
+    ├── image_utils.py         # Image processing utilities
+    ├── language_utils.py      # Language handling utilities
+    └── session_state.py       # Streamlit session state management
+
+![Architecture Diagram](assets/images/architecture.png)
+
+## Installation
+
+### Prerequisites
+- Python 3.8+
+- Node.js 14+
+- Docker & Docker Compose (for deployment)
+
+### Quick Start
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/agrisync.git
+cd agrisync
+
+# Set up virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install frontend dependencies
+cd frontend
+npm install
+cd ..
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# Run development server
+python run.py
+```
+
+## Project Structure
+
+```
+agrisync/
+├── assets/                    # Static assets and images
+├── backend/                   # Backend server and API
+│   ├── api/                   # API endpoints
+│   │   ├── auth/              # Authentication endpoints
+│   │   ├── recommendations/   # Recommendation endpoints
+│   │   ├── market/            # Market intelligence endpoints
+│   │   └── weather/           # Weather analytics endpoints
+│   ├── core/                  # Core application logic
+│   │   ├── services/          # Business logic services
+│   │   ├── models/            # Database models
+│   │   └── tasks/             # Background task definitions
+│   ├── ml/                    # Machine learning models and pipelines
+│   │   ├── crop_recommendation/  # Crop recommendation models
+│   │   ├── disease_detection/    # Disease detection models
+│   │   ├── weather_prediction/   # Weather forecast models
+│   │   ├── nlp/                  # NLP components
+│   │   └── voice/                # Voice processing modules
+│   └── utils/                 # Utility functions
+├── blockchain/                # Blockchain integration components
+│   ├── contracts/             # Smart contracts for supply chain
+│   └── services/              # Blockchain service integrations
+├── config/                    # Configuration files
+├── data/                      # Data processing scripts and seed data
+│   ├── datasets/              # Dataset definitions and loaders
+│   ├── preprocessing/         # Data preprocessing scripts
+│   └── seeders/               # Database seed scripts
+├── deployment/                # Deployment configurations
+│   ├── docker/                # Docker configurations
+│   ├── kubernetes/            # Kubernetes manifests
+│   └── edge/                  # Edge device deployment
+├── docs/                      # Documentation
+│   ├── api/                   # API documentation
+│   ├── models/                # Model documentation
+│   └── guides/                # User and developer guides
+├── frontend/                  # Frontend PWA
+│   ├── public/                # Public assets
+│   │   └── locales/           # Localization files
+│   ├── src/                   # Source code
+│   │   ├── components/        # React components
+│   │   ├── contexts/          # React contexts
+│   │   ├── hooks/             # Custom React hooks
+│   │   ├── pages/             # Page components
+│   │   ├── services/          # Frontend services
+│   │   ├── styles/            # CSS and styling
+│   │   └── utils/             # Utility functions
+│   └── offline/               # Offline functionality
+├── ml_training/               # Training scripts for ML models
+│   ├── crop_recommendation/   # Crop recommendation training
+│   ├── disease_detection/     # Disease detection training
+│   ├── voice_recognition/     # Voice recognition training
+│   └── federated/             # Federated learning implementation
+├── mobile/                    # Mobile-specific adaptations
+│   ├── android/               # Android-specific code
+│   └── ios/                   # iOS-specific code
+├── notebooks/                 # Jupyter notebooks for exploration
+├── scripts/                   # Utility scripts
+├── tests/                     # Test suite
+│   ├── unit/                  # Unit tests
+│   ├── integration/           # Integration tests
+│   └── e2e/                   # End-to-end tests
+├── .env.example               # Example environment variables
+├── .gitignore                 # Git ignore file
+├── docker-compose.yml         # Docker compose configuration
+├── LICENSE                    # License file
+├── requirements.txt          
