@@ -98,7 +98,9 @@ Copyagrisync/
     └── session_state.py       # Streamlit session state management
 ```
 
+## Architecture Diagram 
 ![Architecture Diagram](assets/images/architecture.png)
+
 
 ## 📦 Installation
 
@@ -133,7 +135,7 @@ cp .env.example .env
 python run.py
 ```
 
-## 📁 Project Structure
+## 📁 Project Structure (Final Product)
 
 ```
 agrisync/
