@@ -61,6 +61,41 @@ AgriSync employs a multi-layered architecture designed for resilience and scalab
 4. **Intelligence Layer**: Open-source AI models specialized for agricultural applications
 5. **Integration Layer**: Connections to external data sources and systems
 
+## 📁 Project Structure (For DEMO just)
+AgriSync Project Structure
+Copyagrisync/
+├── app.py                     # Main Streamlit application entry point
+├── README.md                  # Project documentation
+├── requirements.txt           # Dependencies
+├── assets/                    # Static assets for the application
+│   ├── css/                   # Custom CSS styles
+│   ├── images/                # Images for the UI
+│   └── sample_data/           # Sample data for testing
+├── modules/                   # Core functionality modules
+│   ├── voice_assistant.py     # Voice recognition and synthesis
+│   ├── crop_recommendation.py # Crop recommendation engine
+│   ├── disease_detection.py   # Disease detection from images
+│   ├── weather_forecast.py    # Weather prediction module
+│   └── market_data.py         # Market price information
+├── models/                    # Pre-trained model handling
+│   ├── model_loader.py        # Utilities for loading models
+│   └── model_registry.py      # Registry of available models
+├── data/                      # Data handling components
+│   ├── crops_data.py          # Crop database and parameters
+│   ├── disease_data.py        # Disease information
+│   └── weather_data.py        # Weather datasets
+├── ui/                        # UI components
+│   ├── home_page.py           # Home page UI elements
+│   ├── crop_page.py           # Crop recommendation page
+│   ├── disease_page.py        # Disease detection page
+│   ├── weather_page.py        # Weather forecast page
+│   └── market_page.py         # Market information page
+└── utils/                     # Utility functions
+    ├── audio_utils.py         # Audio processing utilities
+    ├── image_utils.py         # Image processing utilities
+    ├── language_utils.py      # Language handling utilities
+    └── session_state.py       # Streamlit session state managemente
+
 ![Architecture Diagram](assets/images/architecture.png)
 
 ## 📦 Installation
@@ -256,15 +291,3 @@ Follow these steps to set up a development environment:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📚 Citations
-
-If you use AgriSync in your research or project, please cite:
-
-```
-@software{AgriSync2023,
-  author = {AgriSync Team},
-  title = {AgriSync: Voice-First AI Farm Assistant for Inclusive Agricultural Intelligence},
-  year = {2023},
-  url = {https://github.com/yourusername/agrisync}
-}
-```
