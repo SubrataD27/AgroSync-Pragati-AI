@@ -3,7 +3,7 @@
 # Team MAHAKUMBH
 ## 🌱 Introduction
 AgriSync is an innovative voice-first AI farm assistant designed to empower farmers with inclusive agricultural intelligence. It leverages cutting-edge technologies to provide personalized recommendations, real-time weather insights, and market intelligence, all in a user-friendly voice interface.
-## 🚀 Meet our Team!! <img src="assets/images/TEAM.png" alt="Team MAHAKUMBH Logo" width="40" height="50" style="vertical-align: middle;">
+## 🚀 Meet our Team!! <img src="assets/images/TEAM.png" alt="Team MAHAKUMBH Logo" width="40" height="40" style="vertical-align: middle; margin-left: 10px; margin-bottom: 5px;">
 ### Subrata Dhibar (Leader)
 ### Chandrakanta Jena (Model Integration)
 ### Raja Babu Sahu (Model Development) 
