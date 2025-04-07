@@ -62,6 +62,7 @@ AgriSync employs a multi-layered architecture designed for resilience and scalab
 5. **Integration Layer**: Connections to external data sources and systems
 
 ## 📁 Project Structure (For DEMO just)
+
 AgriSync Project Structure
 ```
 Copyagrisync/
@@ -101,6 +102,9 @@ Copyagrisync/
 ## Architecture Diagram 
 ![Architecture Diagram](assets/images/architecture.png)
 
+## User-Interaction Diagram 
+![User-Interaction Diagram](assets/images/Userflow.png)
+
 
 ## 📦 Installation
 
@@ -112,7 +116,7 @@ Copyagrisync/
 ### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/agrisync.git
+git clone https://github.com/SubrataD27/AgroSync-Pragati-AI.git
 cd agrisync
 
 # Set up virtual environment
@@ -255,9 +259,6 @@ AgriSync leverages several fine-tuned open-source models:
 - **Languages**: Multilingual support with focus on Indian languages
 - **Deployment**: Cloud model with edge distillation for on-device capabilities
 
-## 🔌 API Documentation
-
-Full API documentation is available in the `/docs/api` directory and as an interactive interface at `/api/docs` when running the server.
 
 ### Key Endpoints
 
