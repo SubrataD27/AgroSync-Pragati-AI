@@ -63,6 +63,7 @@ AgriSync employs a multi-layered architecture designed for resilience and scalab
 
 ## 📁 Project Structure (For DEMO just)
 AgriSync Project Structure
+```
 Copyagrisync/
 ├── app.py                     # Main Streamlit application entry point
 ├── README.md                  # Project documentation
@@ -94,7 +95,8 @@ Copyagrisync/
     ├── audio_utils.py         # Audio processing utilities
     ├── image_utils.py         # Image processing utilities
     ├── language_utils.py      # Language handling utilities
-    └── session_state.py       # Streamlit session state managemente
+    └── session_state.py       # Streamlit session state management
+```
 
 ![Architecture Diagram](assets/images/architecture.png)
 
